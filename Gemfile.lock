@@ -1,22 +1,71 @@
+PATH
+  remote: .
+  specs:
+    rawr (1.8.3-java)
+      bones
+      builder
+      rubyzip
+      user-choices
+
 GEM
   remote: https://rubygems.org/
   specs:
-    bones (3.8.3)
+    bones (3.8.5)
       little-plugger (~> 1.1)
       loquacious (~> 1.9)
-      rake (~> 10.0)
-      rdoc (~> 4.0)
+      rake (~> 13.0)
+      rdoc (~> 6.0)
     builder (3.2.4)
-    hoe (3.22.1)
+    bump (0.10.0)
+    diff-lcs (1.4.4)
+    faraday (1.1.0)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords
+    geminabox (1.2.0)
+      builder
+      faraday
+      httpclient (>= 2.2.7)
+      nesty
+      reentrant_flock
+      sinatra (>= 1.2.7)
+    hoe (3.22.2)
       rake (>= 0.8, < 15.0)
+    httpclient (2.8.3)
     little-plugger (1.1.4)
     loquacious (1.9.1)
-    rake (10.5.0)
-    rdoc (4.3.0)
-    rspec (1.3.0)
+    multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    nesty (1.0.2)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    rake (13.0.1)
+    rdoc (6.2.1)
+    reentrant_flock (0.1.1)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+    rspec-core (3.9.3)
+      rspec-support (~> 3.9.3)
+    rspec-expectations (3.9.3)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.4)
+    ruby2_keywords (0.0.2)
     rubyzip (2.3.0)
     s4t-utils (1.0.4)
       hoe (>= 1.3.0)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    tilt (2.0.10)
     user-choices (1.1.6.1)
       builder (>= 2.1.2)
       s4t-utils (>= 1.0.3)
@@ -27,13 +76,15 @@ PLATFORMS
   java
 
 DEPENDENCIES
-  bones (= 3.8.3)
-  builder (= 3.2.4)
-  hoe (= 3.22.1)
-  rake (= 10.5.0)
-  rspec (= 1.3.0)
-  rubyzip
-  user-choices
+  bump (~> 0.10)
+  bundler (~> 2.1)
+  geminabox (~> 1.2)
+  rake (~> 13.0)
+  rawr!
+  rspec (~> 3.9)
+
+RUBY VERSION
+   ruby 2.5.7p0 (jruby 9.2.13.0)
 
 BUNDLED WITH
    2.1.4

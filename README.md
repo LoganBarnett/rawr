@@ -145,7 +145,13 @@ Please read the docs for `user-choices`, but one key thing to know is the preced
 
 - Option values in the config file will be used so long as they are not overridden by the above conditions.
 
+## Contributing
 
+Rawr can simply be built with:
+
+``` sh
+gem build rawr.gemspec
+```
 
 LICENSE
 -------
